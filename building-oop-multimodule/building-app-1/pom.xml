@@ -5,11 +5,12 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.ies.tierno</groupId>
-        <artifactId>building-oop</artifactId>
+        <artifactId>building-oop-multimodule</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
     <artifactId>building-app-1</artifactId>
+    <packaging>jar</packaging>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
@@ -21,13 +22,13 @@
         <dependency>
             <groupId>org.ies.tierno</groupId>
             <artifactId>building-model</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>${project.version}</version>
         </dependency>
 
         <dependency>
             <groupId>org.ies.tierno</groupId>
             <artifactId>building-readers</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>${project.version}</version>
         </dependency>
     </dependencies>
 
@@ -75,11 +76,10 @@
                     <tag>${project.version}</tag>
 
                     <buildArgs>
-                        <JAR_FILE>target/${project.build.finalName}.jar</JAR_FILE>
+                        <JAR_FILE>${project.build.finalName}.jar</JAR_FILE>
                     </buildArgs>
                 </configuration>
             </plugin>
-
         </plugins>
     </build>
 </project>
