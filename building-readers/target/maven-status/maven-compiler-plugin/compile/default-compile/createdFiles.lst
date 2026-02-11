@@ -1,0 +1,3 @@
+org/ies/tierno/objects/building/readers/BuildingReader.class
+org/ies/tierno/objects/building/readers/ApartmentReader.class
+org/ies/tierno/objects/building/readers/OwnerReader.class
