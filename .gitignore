@@ -17,4 +17,4 @@ target/
 
 db-data/
 
-*.lo
+*.log
